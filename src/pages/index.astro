@@ -12,19 +12,18 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Alister Marc Domilies</div>
+    <div class="text-2xl py-3 font-bold">A Chemical Engineer turned into an AI Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        My passion for mathematics and programming led me first to Data Analytics and later to Artificial Intelligence. I have strong experience across the full data lifecycle—from data engineering and analysis to modeling and deployment. 
+        My Master’s in AI allowed me to master the fundamentals of the field, and I’m now focusing on natural language processing, particularly on how large language models can drive impact for companies.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.linkedin.com/in/alister-marc-d-4332b81b4" target="_blank"> Let's connect!</a>
+      <a href="https://github.com/alistermarc" target="_blank" class="btn btn-outline ml-5">
+        Github Repo
       </a>
     </div>
   </div>
@@ -34,26 +33,25 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Vertex AI Multi-Agent Framework with RAG, SOP, and BigQuery Agents"
+    img="/project1.webp"
+    desc="A multi-agent system on Vertex AI using Google’s ADK, featuring a manager that delegates to specialized agents: a RAG agent for document retrieval, an SOP agent for procedures in Google Sheets, and a BigQuery agent for natural language to SQL queries. It showcases how multi-agent orchestration can unify knowledge retrieval, procedural guidance, and data analytics."
+    url="https://github.com/alistermarc/TWC_Hackathon_2"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Agentic Workflow for Electronics Data Extraction"
+    img="/project2.webp"
+    desc="An agentic pipeline for extracting structured data from unstructured electronics datasheets (PDFs). The system combines OCR, markdown conversion, chunking, and LLM-driven parsing in a graph-based workflow to capture manufacturer part numbers, descriptions, packaging, and markings. It includes intelligent filtering, retries, and validation, producing clean, deduplicated outputs for large-scale electronics data processing."
+    url="https://github.com/alistermarc/Agentic-Workflow-for-Electronics-Data-Extraction"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="RAG Chatbot for Government Documents"
+    img="/project3.webp"
+    desc="A Django-based Retrieval-Augmented Generation (RAG) chatbot designed for government ordinances and resolutions. It integrates AWS Textract for document parsing, Weaviate for vector search, and the OpenAI API for generation, enabling natural language queries with accurate, source-grounded answers to improve access to government information."
+    url="https://github.com/alistermarc/Capstone-Project"
   />
 
   <div>
