@@ -1,0 +1,50 @@
+---
+// src/components/TechStack.astro
+
+const tech = {
+  "Data Analytics": [
+    { name: "Python", url: "https://www.python.org/", logo: "python.svg" },
+    { name: "Pandas", url: "https://pandas.pydata.org/", logo: "pandas.svg" },
+    { name: "NumPy", url: "https://numpy.org/", logo: "numpy.svg" },
+    { name: "PostgreSQL", url: "https://www.postgresql.org/", logo: "postgresql.svg" },
+    { name: "BigQuery", url: "https://cloud.google.com/bigquery", logo: "bigquery.svg" },
+    { name: "Matplotlib", url: "https://matplotlib.org/", logo: "matplotlib.svg" },
+  ],
+  "Machine Learning & Data Science": [
+    { name: "Scikit-learn", url: "https://scikit-learn.org/", logo: "scikitlearn.svg" },
+    { name: "Jupyter", url: "https://jupyter.org/", logo: "jupyter.svg" },
+    { name: "TensorFlow", url: "https://www.tensorflow.org/", logo: "tensorflow.svg" },
+    { name: "PyTorch", url: "https://pytorch.org/", logo: "pytorch.svg" },
+  ],
+  "AI & MLOps": [
+    { name: "Hugging Face", url: "https://huggingface.co/", logo: "huggingface.svg" },
+    { name: "LangChain", url: "https://www.langchain.com/", logo: "langchain.svg" },
+    { name: "Docker", url: "https://www.docker.com/", logo: "docker.svg" },
+    { name: "Amazon Web Services", url: "https://aws.amazon.com/", logo: "aws.svg" },
+    { name: "Google Cloud", url: "https://cloud.google.com/", logo: "gcp.svg" },
+    { name: "OpenAI", url: "https://openai.com/", logo: "openai.svg" },
+    { name: "crewAI", url: "https://www.crewai.com/", logo: "crewai.svg" },
+    { name: "Google ADK", url: "https://cloud.google.com/vertex-ai/docs/agents/build-agents", logo: "google-adk.svg" },
+    { name: "LangGraph", url: "https://langchain-ai.github.io/langgraph/", logo: "langgraph.svg" },
+    { name: "AutoGen", url: "https://microsoft.github.io/autogen/", logo: "autogen.svg" },
+  ],
+};
+---
+
+<div class="w-full">
+  {
+    Object.entries(tech).map(([category, technologies]) => (
+      <div class="mt-10">
+        <div class="text-2xl w-full font-bold mb-5">{category}</div>
+        <div class="flex flex-wrap gap-4">
+          {technologies.map((item) => (
+            <a href={item.url} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 border border-gray-300 rounded-md px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+              <img src={`/tech_logos/${item.logo}`} alt={`${item.name} logo`} class="h-6 w-6" />
+              <span>{item.name}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>
